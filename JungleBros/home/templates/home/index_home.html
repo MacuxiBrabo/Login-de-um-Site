@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login - Jungle Bros</title>
+    <title>Página inicial - Jungle Bros</title>
 </head>
 <body>
 
-    <div>
-
     <h2>Faça seu login</h2>
+    <form action = '{% url 'login' %}' method = 'POST'>
+        {% csrf_token %}
     <button type = 'submit'>Fazer o login</button>
-
-    <div>
-
-    <div>
+    </form>
         
     <h2>caso não tenha, crie uma conta!</h2>
     <button type = 'submit'>Criar uma conta</button>
-
-    <div>
 
 </body>
 </html>

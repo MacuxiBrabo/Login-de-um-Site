@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic.base import RedirectView as Redirecione
 from home import views as pg_inicial
+from login import views as pg_login
 
 urlpatterns = [
     path('home/', pg_inicial.home, name = 'home'),
     path('', Redirecione.as_view(url = '/home/')),
+    path('login/', pg_login.login, name = 'login'),
 ]
