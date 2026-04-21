@@ -5,8 +5,16 @@
 </head>
 <body>
 
-    <h1>Olá, mundo!</h1>
-    <p>Isso é um parágrafo.</p>
+    <form method = 'POST'>
+        {% csrf_token %}
 
+        <label>Usuario:</label>
+        <input type = 'text' name = 'username'>
+
+        <label>Senha:</label>
+        <input type = 'password' name = 'password'>
+
+        <button type = 'submit'>Entrar</button>
+    </form>
 </body>
 </html>

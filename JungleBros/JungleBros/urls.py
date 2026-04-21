@@ -19,9 +19,11 @@ from django.urls import path
 from django.views.generic.base import RedirectView as Redirecione
 from home import views as pg_inicial
 from login import views as pg_login
+from pg_final import views as pg_final
 
 urlpatterns = [
     path('home/', pg_inicial.home, name = 'home'),
     path('', Redirecione.as_view(url = '/home/')),
     path('login/', pg_login.login, name = 'login'),
+    path('pagina_final/', pg_final.pg_final, name = 'pagina_final'),
 ]
