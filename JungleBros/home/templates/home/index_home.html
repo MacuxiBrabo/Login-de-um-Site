@@ -12,7 +12,10 @@
     </form>
         
     <h2>caso não tenha, crie uma conta!</h2>
+    <form action = '{% url 'cadastro' %}' method = 'POST'>
+        {% csrf_token %}
     <button type = 'submit'>Criar uma conta</button>
+    </form>
 
 </body>
 </html>

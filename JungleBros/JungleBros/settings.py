@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'home',
     'login',
     'pg_final',
+    'cadastro'
 ]
 
 MIDDLEWARE = [

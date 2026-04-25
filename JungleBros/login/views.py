@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login as auth_login
 from django.contrib import messages
 
@@ -15,9 +15,10 @@ def login(request):
 
         if autenticar is not None:
             auth_login(request, autenticar)
-            return render(request, 'login/index_paginafinal.html', {'username': autenticar.username})
+            return redirect('pagina_final')
         else:
             messages.error(request, 'Usuário ou senha incorretos')
+            return redirect('login')
         
 
     return render(request, 'login/index_login.html')
