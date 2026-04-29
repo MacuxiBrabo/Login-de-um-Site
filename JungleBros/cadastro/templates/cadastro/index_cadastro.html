@@ -5,8 +5,21 @@
 </head>
 <body>
 
-    <h1>Olá, mundo!</h1>
-    <p>Isso é um parágrafo.</p>
+    <h2>Crie sua conta!</h2>
+    <form method = 'POST'>
+        {% csrf_token %}
 
+        <label>Usuário:</label>
+        <input type = 'text' name = 'username'>
+
+        <label>Senha:</label>
+        <input type = 'password' name = 'password'>
+
+        <button type = 'submit'>Criar</button>
+    </form>
+    {% if erro %}
+        <p style = 'color: red;' >{{ erro }}</p>
+        
+    {% endif %}
 </body>
 </html>

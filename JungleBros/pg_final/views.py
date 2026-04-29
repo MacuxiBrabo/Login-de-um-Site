@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 def pg_final(request):
 
-    return render(request, 'pg_final/index_paginafinal.html')
+    return render(request, 'pg_final/index_paginafinal.html', {'usuario': request.user})

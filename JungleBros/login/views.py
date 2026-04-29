@@ -11,7 +11,11 @@ def login(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
 
-        autenticar = authenticate(request, username = username, password = password)
+        autenticar = authenticate(
+            request, 
+            username = username, 
+            password = password
+            )
 
         if autenticar is not None:
             auth_login(request, autenticar)
