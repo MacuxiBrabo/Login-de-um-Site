@@ -3,7 +3,13 @@
 <head>
     <title>Cadastro - JungleBros</title>
 </head>
+
+    {% load static %}
+
+    <link rel = 'stylesheet' href = '{% static 'css/style.css' %}'>
+
 <body>
+<div>
 
     <h2>Crie sua conta!</h2>
     <form method = 'POST'>
@@ -18,8 +24,10 @@
         <button type = 'submit'>Criar</button>
     </form>
     {% if erro %}
-        <p style = 'color: red;' >{{ erro }}</p>
+        <p class = 'msg-erro' >{{ erro }}</p>
         
     {% endif %}
+
+</div>
 </body>
 </html>

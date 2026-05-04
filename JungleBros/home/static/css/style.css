@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:  darkgray;
+    min-height: 100vh;
+}
+
+div{
+    font-family: arial;
+    background: black;
+    margin: 200px;
+    width: 300px;
+    padding: 100px;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+button{
+
+    padding: 10px;
+    margin: 7px;
+    border: 100;
+    background: white;
+    color: black;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+button:hover{
+    background: darkgray;
+    color: white;
+}
+
+.msg-erro{
+    font-family: italic;
+    margin: 10px;
+    color: red;
+    background: pink;
+}
+
+input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+p{
+    padding: 10px;
+}

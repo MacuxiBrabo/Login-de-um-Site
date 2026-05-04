@@ -3,8 +3,14 @@
 <head>
     <title>Login - Jungle Bros</title>
 </head>
-<body>
 
+    {% load static %}
+
+    <link rel = 'stylesheet' href = '{% static 'css/style.css' %}'>
+
+<body>
+<div>
+    
     <h2>Entre com sua conta!</h2>
     <form method = 'POST'>
         {% csrf_token %}
@@ -21,9 +27,10 @@
     {% csrf_token %}
     {% if messages %}
         {% for message in messages %}
-            <p style = 'color: red;' >{{ message }}</p>
+            <p class = 'msg-erro' >{{ message }}</p>
         {%endfor%}
     {%endif%}
 
+</div>
 </body>
 </html>

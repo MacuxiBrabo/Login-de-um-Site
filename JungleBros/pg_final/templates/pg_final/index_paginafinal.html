@@ -3,10 +3,17 @@
 <head>
     <title>Página final - JungleBros</title>
 </head>
+
+    {% load static %}
+
+    <link rel = 'stylesheet' href = '{% static 'css/style.css' %}'>
+
 <body>
+<div>
 
     <h1>Seja Bem-Vindo, {{ user.username }}</h1>
-    <p>Isso é um parágrafo.</p>
+    <p>ao setor de tecnologia da JungleBros Industria®</p>
 
+</div>
 </body>
 </html>
