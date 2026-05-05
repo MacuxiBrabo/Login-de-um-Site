@@ -4,6 +4,7 @@
 }
 
 body{
+    display: flex;
     background:  darkgray;
     min-height: 100vh;
 }
@@ -11,9 +12,9 @@ body{
 div{
     font-family: arial;
     background: black;
-    margin: 200px;
+    margin: auto;
     width: 300px;
-    padding: 100px;
+    padding: 80px;
     color: white;
     border-radius: 20px;
     
